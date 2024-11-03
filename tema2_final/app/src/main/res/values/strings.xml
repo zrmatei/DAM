@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">tema2Echipa</string>
+    <string name="zi">Zi</string>
+    <string name="tasks">Sarcini</string>
+    <string name="save_btn">Save</string>
+    <string name="show_list">Show List</string>
+    <string name="excp_zi">Format gresit! Pune dd/MM/yyyy</string>
+    <string name="excp_lista_goala">Lista goala</string>
+    <string name="btn_next"> > </string>
+    <string name="timer_is_already_running">Timer is already running</string>
+    <string name="msg_ora">Pune ora intre 0 si 24</string>
+    <string name="msg_min">Pune minutele intre 0 si 59</string>
+    <string name="msg_sec">Pune secundele intre 0 si 59</string>
+    <string name="btn_about">About Us</string>
+    <string name="txt_about_grupa">Grupa: 1089</string>
+    <string name="txt_about_serie">Seria: C</string>
+    <string name="txt_about_membrii">Membrii: Plesanu Eduard Florin, Zana Razvan Matei, Dumitrescu Doru Alexandru, Chingaru George, Codreanu Nina Madalina</string>
+
+
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/primary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CDTimerActivity">
+
+    <LinearLayout
+        android:id="@+id/chingaru_george_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/chingaru_george_hour"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_back_primary10_10"
+            android:gravity="center"
+            android:text="00"
+            android:inputType="number"
+            android:textColor="@color/gray"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text=":"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/chingaru_george_minute"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_back_primary10_10"
+            android:gravity="center"
+            android:text="00"
+            android:inputType="number"
+            android:textColor="@color/gray"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text=":"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/chingaru_george_second"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_back_primary10_10"
+            android:gravity="center"
+            android:text="00"
+            android:inputType="number"
+            android:textColor="@color/gray"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ToggleButton
+        android:background="@color/secondary"
+        android:id="@+id/chingaru_george_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="127dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="53dp"
+        android:textOff="START"
+        android:textOn="STOP" />
+
+    <ToggleButton
+        android:id="@+id/chingaru_george_toggle_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/secondary"
+        android:textOff="Pause"
+        android:textOn="Continue"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+
+
+        />
+
+    <ImageView
+
+        android:layout_above="@+id/chingaru_george_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chingaru_george_linearLayout"
+        android:scaleType="fitCenter"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/timer_logo" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/chingaru_george_btn_prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:contentDescription="Finished"
+        android:width="10dp"
+        android:backgroundTint="@color/secondary"
+        android:src="@drawable/prev"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</RelativeLayout>

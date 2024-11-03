@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/plannifier">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp"
+        android:background="@color/white"
+        android:alpha="0.65"
+        android:id="@+id/til_zana_razvan_matei_add_ti_zi"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_zana_razvan_matei_add_ti_zi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/zi" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_plesanu_florin_eduard_tasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:alpha="0.65"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_zana_razvan_matei_add_ti_zi"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_plesanu_florin_eduard_tasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tasks"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/zana_razvan_matei_btn_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/plesanu_florin_eduard_btn_show_list"
+        app:layout_constraintEnd_toEndOf="@id/plesanu_florin_eduard_btn_show_list"
+        android:layout_marginBottom="250dp"
+        android:width="180dp"
+        android:backgroundTint="@color/secondary"
+        android:text="@string/save_btn"
+        android:textColor="@color/red"
+        android:textSize="50px"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/plesanu_florin_eduard_btn_show_list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="200dp"
+        android:width="180dp"
+        android:backgroundTint="@color/secondary"
+        android:text="@string/show_list"
+        android:textColor="@color/red"
+        android:textSize="50px"
+        />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/plesanu_florin_eduard_btn_next"
+        android:layout_marginBottom="60dp"
+        android:contentDescription="photo"
+        android:width="10dp"
+        android:backgroundTint="@color/secondary"
+        android:src="@drawable/baseline_arrow_forward_ios_24"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/chingaru_george_fab_cdtimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:backgroundTint="@color/secondary"
+        android:contentDescription="Finished"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_alarm_on_24" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nina_madalina_eduard_btn_about_us"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="10dp"
+        android:width="400dp"
+        android:backgroundTint="@color/secondary"
+        android:text="@string/btn_about"
+        android:textColor="@color/red"
+        android:textSize="50px"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
